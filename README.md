@@ -76,3 +76,10 @@ php artisan make:request StoreBlogPost
 ```php
 php artisan make:resource UserResource
 ```
+## Observers
+
+Cобытийный наблюдатель за моделью, нужен для того чтобы на события модели делать какие то действия.
+```php
+php artisan make:observer CategoryObserver --model=Category //cоздадим наблюдателя и сразу укажем модель, события которой надо прослушивать:
+
+```
